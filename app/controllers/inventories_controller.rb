@@ -1,9 +1,9 @@
-class InventoriesController < OpenReadController
+class InventoriesController < ProtectedController
   before_action :set_inventory, only: [:show, :update, :destroy]
 
   # GET /inventories
   def index
-    @inventories = Inventory.all
+    @inventories = current_user.inventories.all
 
     render json: @inventories
   end
