@@ -14,6 +14,6 @@ end. I'll look into how to do that at a later point.
 
 Wireframes:
 
-[Imgur](https://i.imgur.com/PrVBIuZ.png)
+![Imgur](https://i.imgur.com/PrVBIuZ.png)
 Many of these entities ended up not being implemented. Once I have time I'd like
 to build out the app to the full extent that was originally planned.

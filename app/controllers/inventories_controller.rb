@@ -41,7 +41,7 @@ class InventoriesController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_inventory
-      @inventory = Inventory.find(params[:id])
+      @inventory = current_user.inventories.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
